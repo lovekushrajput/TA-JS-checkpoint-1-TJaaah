@@ -56,11 +56,15 @@ getEvenSum();
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.
 ```js
-let num = 123;
+let num = +prompt("Enter a number");
 let mul = 1
+
+while(num!= 0){
 let last = num%  10;
-num = Math.round(num / 10);
-mul = mul * last
+mul = mul * last;
+num = Math.floor(num / 10);
+}
+console.log(mul)
 ```
 
 6. What will be the output of the following code below in multiple conditions? Explain with reason?
